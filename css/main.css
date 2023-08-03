@@ -34,19 +34,23 @@ nav ul{
 }
 
 nav ul li a {
+    position: relative;
     text-decoration: none;
     color: black;
     text-transform: uppercase;
     font-size: 1.6rem;
     position: relative;
+    width: 100%;
+    height: 2px;
+    border-bottom: 2px solid rgb(196, 194, 194);
 }
 
 nav ul li a.active:before {
     position:absolute;
     content: "";
-    width: 50%;
+    width: 100%;
     height: 2px;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid rgb(0, 0, 0);
     bottom: -5px;
 }
 
@@ -55,9 +59,9 @@ nav ul li a:before {
     content: "";
     width: 0%;
     height: 2px;
-    border-bottom: 2px solid rgb(221, 201, 134);
-    bottom: -5px;
-    transition: width .3s;
+    border-bottom: 2px solid rgb(0, 0, 0);
+    bottom: -2px;
+    transition: width .5s;
 }
 /* Hero Section */
 
@@ -176,6 +180,7 @@ p.details {
 .card1 {
     grid-area: left;
     background-image: url('../images/clothing1.jpg');
+    background-repeat: no-repeat;
     position: relative;
 }
 
@@ -191,10 +196,12 @@ p.details {
 }
 
 .card2 {
+    background-repeat: no-repeat;
     background-image: url('../images/clothing2.jpg');
 }
 
 .card3 {
+        background-repeat: no-repeat;
     background-image: url('../images/clothing3.jpg');
 }
 
